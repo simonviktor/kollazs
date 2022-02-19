@@ -35,6 +35,16 @@ body {
     padding: 1px 16px;
     height: 1000px;
   }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+  }
   
   @media screen and (max-width: 700px) {
     .sidebar {

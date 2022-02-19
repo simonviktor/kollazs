@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <table>
+        <div class="sidebar">
+          <a href="index.html">HOME</a>
+          <a href="listak.html">Lista feladat</a>
+          <a href="orarend.html">Órarend</a>
+          <a href="keplink.html">Képlink</a>
+          <a href="gyakorlas.html">Gyakorlás</a>
+          <a class="active" href="urlap.html">Űrlap</a>
+        </div>
+    </table>
+
+    <div class="content">
+
+        <form name="rendeles">
+            <h1>Pizza Rendelés</h1>
+            <fieldset>
+                <legend>Vevő adatai</legend>
+                <p><label>Név: <input type="text" name="nev">
+                <p><label>Telefonszám: <input type="tel" name="telefon" size="10"></label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Pizza mérete</legend>
+                <p><label><input type="radio" name="meret" value="kicsi">15 cm</label></p>
+                <p><label><input type="radio" name="meret" value="kozepes">30 cm</label></p>
+                <p><label><input type="radio" name="meret" value="nagy">60 cm</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Alapok</legend>
+                <p><label><input type="checkbox" name="alap1" value="tejfolos">Tejfölös alap</label></p>
+                <p><label><input type="checkbox" name="alap2" value="paradicsomos">Paradicsomos alap</label></p>
+                <p><label><input type="checkbox" name="alap3" value="sajtos">Sajtos alap</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Feltétek</legend>
+                <p><label><input type="checkbox" name="feltet1" value="sonka">Sonka</label></p>
+                <p><label><input type="checkbox" name="feltet2" value="sajt">Sajt</label></p>
+                <p><label><input type="checkbox" name="feltet3" value="oliva">Oliva bogyó</label></p>
+                <p><label><input type="checkbox" name="feltet4" value="ananasz">Ananász</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Vége</legend>
+                <p><label>Mennyiség: <input type="number" name="mennyiseg"> db</label></p>
+                <p><label>Egyéb feltétek: <input type="text" name="feltetek"></p>
+                <br>
+                <input type="submit" name="elkuldes">
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Viktor Copyright © </p>
+    </div>
+
+</body>
+</html>
