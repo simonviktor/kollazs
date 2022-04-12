@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reg.css">
+    <title>Regisztráció</title>
+</head>
+<body>
+    <table>
+        <div class="sidebar">
+          <a href="index.html">HOME</a>
+          <a href="listak.html">Lista feladat</a>
+          <a href="orarend.html">Órarend</a>
+          <a href="keplink.html">Képlink</a>
+          <a href="gyakorlas.html">Gyakorlás</a>
+          <a href="urlap.html">Űrlap</a>
+          <a href="evszakok.html">Évszakok</a>
+          <a href="billentyuzet.html">Billentyűzet</a>
+          <a href="kosar.html">Kosár</a>
+          <a href="pita.html">Pitagorasz</a>
+          <a class="active" href="regisztracio.html">Regisztráció</a>
+          </div>
+    </table>
+    <fieldset style="width: 20%;">
+        <legend>Regisztráció</legend>
+        <input type="email" id="emma" placeholder="Email">
+        <br>
+        <input type="password" id="jel1" placeholder="Jelszó">
+        <br>
+        <input type="password" id="jel2" placeholder="Jelszó ismétlése">
+        <br>
+        <button onclick="reg(emma.value,jel1.value,jel2.value)">Regisztráció</button>
+    </fieldset>
+    <script>
+        function reg(user,pass1,pass2) {
+            if (user != "" && pass1 != "" && pass2 != "") {
+                if (pass1 == pass2) {
+                    alert("Regisztrálva" + user)
+                }
+                else {
+                    alert("Nem egyezik a jelszó!")
+                }
+            }
+            else {
+                alert("Helytelenül adtad meg az adataid")
+            } 
+        }
+    </script>
+</body>
+</html>

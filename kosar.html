@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kosar.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body style="background-color: bisque;">
+    <table>
+        <div class="sidebar">
+          <a href="index.html">HOME</a>
+          <a href="listak.html">Lista feladat</a>
+          <a href="orarend.html">Órarend</a>
+          <a href="keplink.html">Képlink</a>
+          <a href="gyakorlas.html">Gyakorlás</a>
+          <a href="urlap.html">Űrlap</a>
+          <a href="evszakok.html">Évszakok</a>
+          <a href="billentyuzet.html">Billentyűzet</a>
+          <a class="active" href="kosar.html">Kosár</a>
+          <a href="pita.html">Pitagorasz</a>
+          <a href="regisztracio.html">Regisztráció</a>
+          </div>
+    </table>
+    <center>
+        <button id="termek1" onclick="kosarba('termek1')" class="button"><img src="img/cipo2.png" alt=""><br>Cipő 1.</button>
+        <button id="termek2" onclick="kosarba('termek2')" class="button"><img src="img/cipo3.png" alt=""><br>Cipő 2.</button>
+        <button id="termek3" onclick="kosarba('termek3')" class="button"><img src="img/cipo1.png" alt=""><br>Cipő 3.</button><br><br>
+        <button onclick="torles('torles')" class="torles">TÖRLÉS</button>
+        <button onclick="kosar()" class="kosar">KOSÁR</button>
+    </center>
+    <table id="table" border="2px"></table>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pita</title>
+    <style>
+          .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+    </style>
+</head>
+<body style="background-color: antiquewhite;">
+    <table>
+        <div class="sidebar">
+          <a href="index.html">HOME</a>
+          <a href="listak.html">Lista feladat</a>
+          <a href="orarend.html">Órarend</a>
+          <a href="keplink.html">Képlink</a>
+          <a href="gyakorlas.html">Gyakorlás</a>
+          <a href="urlap.html">Űrlap</a>
+          <a href="evszakok.html">Évszakok</a>
+          <a href="billentyuzet.html">Billentyűzet</a>
+          <a href="kosar.html">Kosár</a>
+          <a class="active" href="pita.html">Pitagorasz</a>
+          <a href="regisztracio.html">Regisztráció</a>
+          </div>
+    </table>
+    <fieldset style="width: 100px; border: 2px solid black; background-color: bisque; margin: auto; border-radius: 20px;">
+        <legend style="text-align: center; border: 2px solid black; border-radius: 5px; background-color: bisque;">Számolás</legend>
+        <img src="img/pita.png" alt=""><br>
+        <hr>
+        <input type="number" placeholder="A oldal" id="aoldal" style="border-radius: 5px; border: 2px solid black; background-color: antiquewhite; display: flex; margin: auto;"><br>
+        <input type="number" placeholder="B oldal" id="boldal" style="border-radius: 5px; border: 2px solid black; background-color: antiquewhite; display: flex; margin: auto;"><br>
+        <button onclick="pita(aoldal.value,boldal.value)" style="border-radius: 5px; border: 2px solid black; background-color: antiquewhite; display: flex; margin: auto;">SZÁMÍT</button>
+        <hr>
+        <p>Eredmény:</p>
+        <p><span id="c"></span></p>
+    </fieldset>
+    <script>
+        function pita(a,b) {
+            var c = 0
+            document.getElementById("c").innerHTML=Math.sqrt(a*a+b*b);  
+        }
+    </script>
+</body>
+</html>

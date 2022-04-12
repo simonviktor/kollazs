@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+    </style>
+</head>
+<body style="background-color: bisque;">
+    <table>
+        <div class="sidebar">
+          <a href="index.html">HOME</a>
+          <a href="listak.html">Lista feladat</a>
+          <a href="orarend.html">Órarend</a>
+          <a href="keplink.html">Képlink</a>
+          <a href="gyakorlas.html">Gyakorlás</a>
+          <a href="urlap.html">Űrlap</a>
+          <a href="evszakok.html">Évszakok</a>
+          <a class="active" href="billentyuzet.html">Billentyűzet</a>
+          <a href="kosar.html">Kosár</a>
+          <a href="pita.html">Pitagorasz</a>
+          <a href="regisztracio.html">Regisztráció</a>
+          </div>
+    </table>
+    <div class="content">
+    <h1 style="text-align: center;">Billentyűzetek</h1>
+    <table border="1" style="margin: auto; border-radius: 15px;">
+        <tr style="border-radius: 15px; background-color: blanchedalmond;">
+            <td style="text-align: center; border-radius: 15px;">ASUS TUF GAMING K7</td>
+            <td style="text-align: center; border-radius: 15px;">CORSAIR K95 RGB PLATINUM</td>
+            <td style="text-align: center; border-radius: 15px;">WHITE SHARK SPARTAN</td>
+            <td style="text-align: center; border-radius: 15px;">BLITZWOLF BW-KB1</td>
+        </tr>
+        <tr style="background-color: white; border-radius: 15px;">
+            <td><img src="https://i0.wp.com/www.notebook.hu/blog/wp-content/uploads/2021/05/asus-tuf-gaming-k7.jpg?resize=768%2C448&ssl=1" alt="" style="width: 300px;"></td>
+            <td><img src="https://i0.wp.com/www.notebook.hu/blog/wp-content/uploads/2021/05/corsair-k95.jpg?resize=768%2C407&ssl=1" alt="" style="width: 300px;"></td>
+            <td><img src="https://i0.wp.com/www.notebook.hu/blog/wp-content/uploads/2021/05/white-shark-gk-1925-spartan.jpg?resize=768%2C335&ssl=1" alt="" style="width: 300px;"></td>
+            <td><img src="https://blitzwolf.hu/img/90562/BlitzWolf-BW-KB1/500x500/BlitzWolf-BW-KB1.jpg?time=1646758364" alt="" style="width: 300px;"></td>
+        </tr>
+        <tr style="text-align:center; background-color: blanchedalmond; border-radius: 15px;">
+            <td style="border-radius: 15px;">56 290 Ft</td>
+            <td style="border-radius: 15px;">63 990 Ft</td>
+            <td style="border-radius: 15px;">14 390 Ft</td>
+            <td style="border-radius: 15px;">25 900 Ft <br> <br>
+                Modell	BW-KB1 <br>
+                Szín	Fekete <br>
+                Billentyűzet	63 gomb <br>
+                Kapcsolat	Type-C és Bluetooth</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
